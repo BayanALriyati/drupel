@@ -1,0 +1,10 @@
+{% include '@ruhi/template-parts/header.html.twig' %}
+{% if page.highlighted %}
+  {% include '@thex/template-parts/highlighted.html.twig' %}
+{% endif %}
+<div class="main-wrapper">
+  {% if page.content_home_top %}
+    {% include '@thex/template-parts/content-parts/content_home_top.html.twig' %}
+  {% endif %}
+</div><!--/main-wrapper -->
+{% include '@ruhi/template-parts/footer.html.twig' %}
